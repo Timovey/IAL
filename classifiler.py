@@ -26,15 +26,15 @@ stopwords_1 = list(set(stopwords.words('russian')))
 results = []
 reviews = [(review, "1") for review in positive] + [(review, "0") for review in negative]
 
-def run_experiment(texts, labels, use_stop_words, ngram_range, test_size):
-    # Разделение данных на обучающую и тестовую выборки
+def calculate(texts, labels, use_stop_words, ngram_range, test_size):
+    #Обучающая и тестовая выборки
     X_train, X_test, y_train, y_test = train_test_split(texts, labels, test_size=test_size, random_state=42)
 
-    # Векторизация текста
     if use_stop_words:
         vectorizer = CountVectorizer(stop_words=stopwords_1, ngram_range=ngram_range)
     else:
         vectorizer = CountVectorizer(ngram_range=ngram_range)
+
     X_train_vectorized = vectorizer.fit_transform(X_train)
     X_test_vectorized = vectorizer.transform(X_test)
 
@@ -42,55 +42,37 @@ def run_experiment(texts, labels, use_stop_words, ngram_range, test_size):
     classifier = MultinomialNB()
     classifier.fit(X_train_vectorized, y_train)
 
-    # Оценка точности классификации
-    accuracy = accuracy_score(y_test, classifier.predict(X_test_vectorized))
+    # Предсказание
+    predict = classifier.predict(X_test_vectorized)
 
-    return accuracy
+    #Возращаем точность
+    return accuracy_score(y_test, predict)
 
+def run(reviews, total_test_size, using_stop_word, gram):
+    textsWithCategory = reviews
+    for test_size in total_test_size:
+        random.shuffle(textsWithCategory)
 
-def run_experiments():
-    i = 0
-    for stop_words in using_stop_words:
-        for ngram_range in total_ngram_range:
-            for test_size in total_test_size:
-                i = i + 1
-                textsWithCategory = reviews
+        texts = [text for text, category in textsWithCategory]
+        labels = [category for text, category in textsWithCategory]
 
-                random.shuffle(textsWithCategory)
+        # Запуск эксперимента
+        acc = calculate(texts, labels, using_stop_word, gram, test_size)
 
-                texts = [text for text, category in textsWithCategory]
-                labels = [category for text, category in textsWithCategory]
+        stwrds = "Со стоп-словами; " if using_stop_word else "Без стоп-слов; "
 
-                # Запуск эксперимента
-                accuracy = run_experiment(texts, labels, stop_words, ngram_range, test_size)
+        ngrm = "Грамма: "  + str(gram) + "; "
 
-                stwrds = ""
-                if stop_words:
-                    stwrds = "Использовались стоп-слова; "
-                else:
-                    stwrds = "Не использовались стоп-слова; "
+        test_size = "Размер  " + str(round(test_size * 100)) + "%"
 
-                ngrm = ""
-                if ngram_range == (1,1):
-                    ngrm = "Униграмма; "
-                else:
-                    ngrm = "Биграмма; "
-
-                ts = "Размер тестовой выборки " + str(test_size * 100) + "%"
-
-                # Сохранение результатов
-                results.append("Итерация: " + str(i) + "; Точность: " + str(accuracy) + "; " + stwrds + ngrm + ts)
+        # Сохранение результатов
+        print(test_size + "; Точность: " + str(round(acc, 2)) + "; " + stwrds + ngrm)
 
 
-# Параметры экспериментов
-using_stop_words = [True, False]
-total_ngram_range = [(1, 1), (1, 2)]
-
-
+#размеры
 total_test_size = [0.1, 0.15, 0.2, 0.25, 0.3]
 
-# Запуск экспериментов
-run_experiments()
-
-for i in range(0, 20):
-    print(results[i])
+run(reviews, total_test_size, True, (1, 1))
+run(reviews, total_test_size, False, (1, 1))
+run(reviews, total_test_size, True, (1, 2))
+run(reviews, total_test_size, False, (1, 2))
