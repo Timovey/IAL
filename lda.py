@@ -40,19 +40,17 @@ textCollDictionary = corpora.Dictionary(textCollTokens)
 textCollDictionary.filter_extremes(no_below=1)
 textCollDictionary.save_as_text('textCollDictionary2.txt')
 
-for co in textCollTokens:
-    print(co)
+
+
 textCorpus = [textCollDictionary.doc2bow(doc) for doc in textCollTokens]
 nTopics = 2
 model = models.ldamodel.LdaModel(corpus=textCorpus, num_topics=
 nTopics, id2word=textCollDictionary)
-# print(model.print_topics()[:1])
 
 textTopicsMtx = np.zeros(shape=(len(textCorpus), nTopics), dtype=float)
 for k in range(len(textCorpus)):
     for tpcId, tpcProb in model.get_document_topics(textCorpus[k]):
         textTopicsMtx[k, tpcId] = tpcProb
-print(textTopicsMtx)
 
 
 cloud = WordCloud(background_color='white', width=2500,

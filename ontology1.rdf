@@ -1,0 +1,4672 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="C:/Users/Timovey/Desktop/ontology.owl"
+         xmlns="C:/Users/Timovey/Desktop/ontology.owl#">
+
+<owl:Ontology rdf:about="C:/Users/Timovey/Desktop/ontology.owl"/>
+
+<owl:ObjectProperty rdf:about="#has_tone">
+  <rdfs:domain rdf:resource="#Review"/>
+  <rdfs:range rdf:resource="#Theme"/>
+  <owl:inverseOf rdf:resource="#has_review"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_review">
+  <rdfs:domain rdf:resource="#Theme"/>
+  <rdfs:range rdf:resource="#Review"/>
+  <owl:inverseOf rdf:resource="#has_tone"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_word">
+  <rdfs:domain rdf:resource="#Review"/>
+  <rdfs:range rdf:resource="#Word"/>
+  <owl:inverseOf rdf:resource="#includes_in_review"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#includes_in_review">
+  <rdfs:domain rdf:resource="#Word"/>
+  <rdfs:range rdf:resource="#Review"/>
+  <owl:inverseOf rdf:resource="#has_word"/>
+</owl:ObjectProperty>
+
+<owl:Class rdf:about="#Review">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Theme">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Word">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:NamedIndividual rdf:about="#positive">
+  <rdf:type rdf:resource="#Theme"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative">
+  <rdf:type rdf:resource="#Theme"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_0">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#камен"/>
+  <has_word rdf:resource="#хорош"/>
+  <has_word rdf:resource="#мат"/>
+  <has_word rdf:resource="#msi"/>
+  <has_word rdf:resource="#b660a"/>
+  <has_word rdf:resource="#довольн"/>
+  <has_word rdf:resource="#стар"/>
+  <has_word rdf:resource="#корсар"/>
+  <has_word rdf:resource="#завел"/>
+  <has_word rdf:resource="#3200"/>
+  <has_word rdf:resource="#стоков"/>
+  <has_word rdf:resource="#биос"/>
+  <has_word rdf:resource="#ID-COOLING"/>
+  <has_word rdf:resource="#SE-224-XT"/>
+  <has_word rdf:resource="#температур"/>
+  <has_word rdf:resource="#игр"/>
+  <has_word rdf:resource="#больш"/>
+  <has_word rdf:resource="#поднима"/>
+  <has_word rdf:resource="#стресс"/>
+  <has_word rdf:resource="#тест"/>
+  <has_word rdf:resource="#зна"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#камен">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#хорош">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#мат">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#msi">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#b660a">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#довольн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#стар">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#корсар">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#завел">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#3200">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#стоков">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#биос">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ID-COOLING">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#SE-224-XT">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#температур">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#игр">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#больш">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#поднима">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#стресс">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#тест">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#зна">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_1">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#отличн"/>
+  <has_word rdf:resource="#камен"/>
+  <has_word rdf:resource="#материнск"/>
+  <has_word rdf:resource="#плат"/>
+  <has_word rdf:resource="#ASUS"/>
+  <has_word rdf:resource="#TUF"/>
+  <has_word rdf:resource="#GAMING"/>
+  <has_word rdf:resource="#B660-PLUS"/>
+  <has_word rdf:resource="#WIFI"/>
+  <has_word rdf:resource="#завел"/>
+  <has_word rdf:resource="#танц"/>
+  <has_word rdf:resource="#бубн"/>
+  <has_word rdf:resource="#оперативн"/>
+  <has_word rdf:resource="#памя"/>
+  <has_word rdf:resource="#Kingston"/>
+  <has_word rdf:resource="#Fury"/>
+  <has_word rdf:resource="#Beast"/>
+  <has_word rdf:resource="#Black"/>
+  <has_word rdf:resource="#KF432C16BBK2/16"/>
+  <has_word rdf:resource="#DDR4"/>
+  <has_word rdf:resource="#8гб"/>
+  <has_word rdf:resource="#стартанул"/>
+  <has_word rdf:resource="#коробк"/>
+  <has_word rdf:resource="#заявлен"/>
+  <has_word rdf:resource="#частот"/>
+  <has_word rdf:resource="#3200мгц"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#отличн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#материнск">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#плат">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ASUS">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#TUF">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#GAMING">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#B660-PLUS">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#WIFI">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#танц">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#бубн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#оперативн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#памя">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Kingston">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Fury">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Beast">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Black">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#KF432C16BBK2/16">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#DDR4">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#8гб">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#стартанул">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#коробк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#заявлен">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#частот">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#3200мгц">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_2">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#перешел"/>
+  <has_word rdf:resource="#1240"/>
+  <has_word rdf:resource="#i7-4770"/>
+  <has_word rdf:resource="#разниц"/>
+  <has_word rdf:resource="#колоссальн"/>
+  <has_word rdf:resource="#очен"/>
+  <has_word rdf:resource="#приятн"/>
+  <has_word rdf:resource="#удивл"/>
+  <has_word rdf:resource="#хват"/>
+  <has_word rdf:resource="#надолг"/>
+  <has_word rdf:resource="#пар"/>
+  <has_word rdf:resource="#3070"/>
+  <has_word rdf:resource="#киберпанк"/>
+  <has_word rdf:resource="#1080р"/>
+  <has_word rdf:resource="#ультр"/>
+  <has_word rdf:resource="#настройк"/>
+  <has_word rdf:resource="#луч"/>
+  <has_word rdf:resource="#dlss"/>
+  <has_word rdf:resource="#больш"/>
+  <has_word rdf:resource="#загружа"/>
+  <has_word rdf:resource="#достаточн"/>
+  <has_word rdf:resource="#холодн"/>
+  <has_word rdf:resource="#deepcool"/>
+  <has_word rdf:resource="#ak500"/>
+  <has_word rdf:resource="#выш"/>
+  <has_word rdf:resource="#градус"/>
+  <has_word rdf:resource="#видел"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#перешел">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#1240">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#i7-4770">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#разниц">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#колоссальн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#очен">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#приятн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#удивл">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#хват">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#надолг">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#пар">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#3070">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#киберпанк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#1080р">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ультр">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#настройк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#луч">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#dlss">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#загружа">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#достаточн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#холодн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#deepcool">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ak500">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#выш">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#градус">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#видел">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_3">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#хорош"/>
+  <has_word rdf:resource="#камушек"/>
+  <has_word rdf:resource="#цен"/>
+  <has_word rdf:resource="#перешел"/>
+  <has_word rdf:resource="#ryzen"/>
+  <has_word rdf:resource="#2600x"/>
+  <has_word rdf:resource="#замет"/>
+  <has_word rdf:resource="#больш"/>
+  <has_word rdf:resource="#прирост"/>
+  <has_word rdf:resource="#производительн"/>
+  <has_word rdf:resource="#поддержк"/>
+  <has_word rdf:resource="#3200"/>
+  <has_word rdf:resource="#мгц"/>
+  <has_word rdf:resource="#памят"/>
+  <has_word rdf:resource="#завел"/>
+  <has_word rdf:resource="#коробк"/>
+  <has_word rdf:resource="#b660"/>
+  <has_word rdf:resource="#материнк"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#камушек">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#цен">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ryzen">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#2600x">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#замет">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#прирост">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#производительн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#поддержк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#мгц">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#памят">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#b660">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#материнк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_4">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#холодн"/>
+  <has_word rdf:resource="#перешел"/>
+  <has_word rdf:resource="#Ryzen"/>
+  <has_word rdf:resource="#1600"/>
+  <has_word rdf:resource="#игр"/>
+  <has_word rdf:resource="#выш"/>
+  <has_word rdf:resource="#54°"/>
+  <has_word rdf:resource="#rtx"/>
+  <has_word rdf:resource="#3060"/>
+  <has_word rdf:resource="#12гб"/>
+  <has_word rdf:resource="#видел"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ryzen">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#1600">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#54°">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#rtx">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#3060">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#12гб">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_5">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#шикарн"/>
+  <has_word rdf:resource="#проц"/>
+  <has_word rdf:resource="#игр"/>
+  <has_word rdf:resource="#тянет"/>
+  <has_word rdf:resource="#тормоз"/>
+  <has_word rdf:resource="#ASUS"/>
+  <has_word rdf:resource="#TUF"/>
+  <has_word rdf:resource="#GAMING"/>
+  <has_word rdf:resource="#B660M-E"/>
+  <has_word rdf:resource="#Patriot"/>
+  <has_word rdf:resource="#Viper"/>
+  <has_word rdf:resource="#Blackout"/>
+  <has_word rdf:resource="#PVB416G400C9K"/>
+  <has_word rdf:resource="#DDR4"/>
+  <has_word rdf:resource="#цен"/>
+  <has_word rdf:resource="#приемлем"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#шикарн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#проц">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#тянет">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#тормоз">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#B660M-E">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Patriot">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Viper">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Blackout">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#PVB416G400C9K">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#приемлем">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_6">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#отличн"/>
+  <has_word rdf:resource="#камен"/>
+  <has_word rdf:resource="#всег"/>
+  <has_word rdf:resource="#разгон"/>
+  <has_word rdf:resource="#анлок"/>
+  <has_word rdf:resource="#работа"/>
+  <has_word rdf:resource="#холодн"/>
+  <has_word rdf:resource="#проц"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#всег">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#разгон">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#анлок">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#работа">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_7">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#цен"/>
+  <has_word rdf:resource="#деньг"/>
+  <has_word rdf:resource="#проц"/>
+  <has_word rdf:resource="#холодн"/>
+  <has_word rdf:resource="#трубк"/>
+  <has_word rdf:resource="#кулер"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#деньг">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#трубк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#кулер">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_8">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#хорош"/>
+  <has_word rdf:resource="#производительн"/>
+  <has_word rdf:resource="#игр"/>
+  <has_word rdf:resource="#холодн"/>
+  <has_word rdf:resource="#актуал"/>
+  <has_word rdf:resource="#вторичк"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#актуал">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#вторичк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_9">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#отличн"/>
+  <has_word rdf:resource="#камен"/>
+  <has_word rdf:resource="#материнск"/>
+  <has_word rdf:resource="#плат"/>
+  <has_word rdf:resource="#ASUS"/>
+  <has_word rdf:resource="#TUF"/>
+  <has_word rdf:resource="#GAMING"/>
+  <has_word rdf:resource="#B660-PLUS"/>
+  <has_word rdf:resource="#работа"/>
+  <has_word rdf:resource="#год"/>
+  <has_word rdf:resource="#гарант"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#год">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#гарант">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_10">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#перешел"/>
+  <has_word rdf:resource="#3470"/>
+  <has_word rdf:resource="#слов…одн"/>
+  <has_word rdf:resource="#эмоц"/>
+  <has_word rdf:resource="#влож"/>
+  <has_word rdf:resource="#дан"/>
+  <has_word rdf:resource="#камен"/>
+  <has_word rdf:resource="#Asus"/>
+  <has_word rdf:resource="#TUF"/>
+  <has_word rdf:resource="#b660"/>
+  <has_word rdf:resource="#Wi-Fi"/>
+  <has_word rdf:resource="#изумительн"/>
+  <has_word rdf:resource="#рекоменд"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#3470">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#слов…одн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#эмоц">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#влож">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#дан">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Asus">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Wi-Fi">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#изумительн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#рекоменд">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_11">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#бюджетн"/>
+  <has_word rdf:resource="#лучш"/>
+  <has_word rdf:resource="#можн"/>
+  <has_word rdf:resource="#найт"/>
+  <has_word rdf:resource="#Intel"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#бюджетн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#лучш">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#можн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#найт">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Intel">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_12">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#отличн"/>
+  <has_word rdf:resource="#процессор"/>
+  <has_word rdf:resource="#год"/>
+  <has_word rdf:resource="#гарант"/>
+  <has_word rdf:resource="#приемлем"/>
+  <has_word rdf:resource="#цен"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#процессор">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_13">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#работа"/>
+  <has_word rdf:resource="#греет"/>
+  <has_word rdf:resource="#прост"/>
+  <has_word rdf:resource="#постав"/>
+  <has_word rdf:resource="#нег"/>
+  <has_word rdf:resource="#сверх"/>
+  <has_word rdf:resource="#древн"/>
+  <has_word rdf:resource="#залма"/>
+  <has_word rdf:resource="#вид"/>
+  <has_word rdf:resource="#розочк"/>
+  <has_word rdf:resource="#набра"/>
+  <has_word rdf:resource="#ламел"/>
+  <has_word rdf:resource="#полож"/>
+  <has_word rdf:resource="#вентилятор"/>
+  <has_word rdf:resource="#сотк"/>
+  <has_word rdf:resource="#кажет"/>
+  <has_word rdf:resource="#вполн"/>
+  <has_word rdf:resource="#достаточн"/>
+  <has_word rdf:resource="#можн"/>
+  <has_word rdf:resource="#даж"/>
+  <has_word rdf:resource="#вер"/>
+  <has_word rdf:resource="#всяк"/>
+  <has_word rdf:resource="#белеберд"/>
+  <has_word rdf:resource="#врод"/>
+  <has_word rdf:resource="#стелларис"/>
+  <has_word rdf:resource="#тормоз"/>
+  <has_word rdf:resource="#люб"/>
+  <has_word rdf:resource="#случа"/>
+  <has_word rdf:resource="#страшн"/>
+  <has_word rdf:resource="#затупк"/>
+  <has_word rdf:resource="#коряв"/>
+  <has_word rdf:resource="#софт"/>
+  <has_word rdf:resource="#процессор"/>
+  <has_word rdf:resource="#перегрева"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#греет">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#прост">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#постав">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#нег">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#сверх">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#древн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#залма">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#вид">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#розочк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#набра">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ламел">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#полож">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#вентилятор">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#сотк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#кажет">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#вполн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#даж">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#вер">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#всяк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#белеберд">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#врод">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#стелларис">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#люб">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#случа">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#страшн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#затупк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#коряв">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#софт">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#перегрева">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_14">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#прекрасн"/>
+  <has_word rdf:resource="#проц"/>
+  <has_word rdf:resource="#запас"/>
+  <has_word rdf:resource="#будущ"/>
+  <has_word rdf:resource="#мат"/>
+  <has_word rdf:resource="#msi"/>
+  <has_word rdf:resource="#mag"/>
+  <has_word rdf:resource="#b660m"/>
+  <has_word rdf:resource="#mortar"/>
+  <has_word rdf:resource="#wifi"/>
+  <has_word rdf:resource="#звер"/>
+  <has_word rdf:resource="#конечн"/>
+  <has_word rdf:resource="#брал"/>
+  <has_word rdf:resource="#комплект"/>
+  <has_word rdf:resource="#перспектив"/>
+  <has_word rdf:resource="#апгрейд"/>
+  <has_word rdf:resource="#оперативк"/>
+  <has_word rdf:resource="#пок"/>
+  <has_word rdf:resource="#fury"/>
+  <has_word rdf:resource="#3200"/>
+  <has_word rdf:resource="#гиг"/>
+  <has_word rdf:resource="#тож"/>
+  <has_word rdf:resource="#пот"/>
+  <has_word rdf:resource="#буд"/>
+  <has_word rdf:resource="#видюх"/>
+  <has_word rdf:resource="#1660"/>
+  <has_word rdf:resource="#грел"/>
+  <has_word rdf:resource="#хот"/>
+  <has_word rdf:resource="#сильн"/>
+  <has_word rdf:resource="#тест"/>
+  <has_word rdf:resource="#вполн"/>
+  <has_word rdf:resource="#довол"/>
+  <has_word rdf:resource="#воздушн"/>
+  <has_word rdf:resource="#охлажден"/>
+  <has_word rdf:resource="#хвататет"/>
+  <has_word rdf:resource="#взял"/>
+  <has_word rdf:resource="#кулер"/>
+  <has_word rdf:resource="#рассеива"/>
+  <has_word rdf:resource="#мощност"/>
+  <has_word rdf:resource="#220w"/>
+  <has_word rdf:resource="#стольк"/>
+  <has_word rdf:resource="#выда"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#прекрасн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#запас">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#будущ">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mag">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#b660m">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mortar">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#wifi">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#звер">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#конечн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#брал">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#комплект">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#перспектив">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#апгрейд">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#оперативк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#пок">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#fury">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#гиг">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#тож">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#пот">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#буд">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#видюх">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#1660">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#грел">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#хот">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#сильн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#довол">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#воздушн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#охлажден">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#хвататет">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#взял">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#рассеива">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#мощност">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#220w">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#стольк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#выда">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_15">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#хорош"/>
+  <has_word rdf:resource="#камен"/>
+  <has_word rdf:resource="#дума"/>
+  <has_word rdf:resource="#реша"/>
+  <has_word rdf:resource="#выбра"/>
+  <has_word rdf:resource="#красн"/>
+  <has_word rdf:resource="#5600х"/>
+  <has_word rdf:resource="#сокет"/>
+  <has_word rdf:resource="#ам4"/>
+  <has_word rdf:resource="#дальн"/>
+  <has_word rdf:resource="#апгрейд"/>
+  <has_word rdf:resource="#син"/>
+  <has_word rdf:resource="#красавчик"/>
+  <has_word rdf:resource="#хват"/>
+  <has_word rdf:resource="#долг"/>
+  <has_word rdf:resource="#связк"/>
+  <has_word rdf:resource="#3060"/>
+  <has_word rdf:resource="#12гб"/>
+  <has_word rdf:resource="#мат"/>
+  <has_word rdf:resource="#b760"/>
+  <has_word rdf:resource="#памя"/>
+  <has_word rdf:resource="#fury"/>
+  <has_word rdf:resource="#завел"/>
+  <has_word rdf:resource="#коробк"/>
+  <has_word rdf:resource="#греет"/>
+  <has_word rdf:resource="#игр"/>
+  <has_word rdf:resource="#стресс"/>
+  <has_word rdf:resource="#тест"/>
+  <has_word rdf:resource="#64-65"/>
+  <has_word rdf:resource="#градус"/>
+  <has_word rdf:resource="#прост"/>
+  <has_word rdf:resource="#34-36"/>
+  <has_word rdf:resource="#пересел"/>
+  <has_word rdf:resource="#4770к"/>
+  <has_word rdf:resource="#прирост"/>
+  <has_word rdf:resource="#сильн"/>
+  <has_word rdf:resource="#ощутим"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#дума">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#реша">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#выбра">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#красн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#5600х">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#сокет">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ам4">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#дальн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#син">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#красавчик">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#долг">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#связк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#b760">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#64-65">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#34-36">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#пересел">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#4770к">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ощутим">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_16">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#ядер"/>
+  <has_word rdf:resource="#приличн"/>
+  <has_word rdf:resource="#кэш-памят"/>
+  <has_word rdf:resource="#мал"/>
+  <has_word rdf:resource="#потребля"/>
+  <has_word rdf:resource="#легк"/>
+  <has_word rdf:resource="#охлад"/>
+  <has_word rdf:resource="#мног"/>
+  <has_word rdf:resource="#плат"/>
+  <has_word rdf:resource="#нег"/>
+  <has_word rdf:resource="#разумн"/>
+  <has_word rdf:resource="#цен"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ядер">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#приличн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#кэш-памят">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#мал">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#потребля">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#легк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#охлад">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#мног">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#разумн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_17">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#отличн"/>
+  <has_word rdf:resource="#холодн"/>
+  <has_word rdf:resource="#дорог"/>
+  <has_word rdf:resource="#кристалл"/>
+  <has_word rdf:resource="#хот"/>
+  <has_word rdf:resource="#сток"/>
+  <has_word rdf:resource="#идет"/>
+  <has_word rdf:resource="#разгон"/>
+  <has_word rdf:resource="#можн"/>
+  <has_word rdf:resource="#снят"/>
+  <has_word rdf:resource="#лимит"/>
+  <has_word rdf:resource="#нем"/>
+  <has_word rdf:resource="#чипсет"/>
+  <has_word rdf:resource="#прибавля"/>
+  <has_word rdf:resource="#производительн"/>
+  <has_word rdf:resource="#разогна"/>
+  <has_word rdf:resource="#шин"/>
+  <has_word rdf:resource="#стал"/>
+  <has_word rdf:resource="#удивлен"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#дорог">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#кристалл">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#сток">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#идет">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#снят">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#лимит">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#нем">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#чипсет">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#прибавля">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#разогна">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#шин">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#стал">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#удивлен">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_18">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#хорош"/>
+  <has_word rdf:resource="#проц"/>
+  <has_word rdf:resource="#завел"/>
+  <has_word rdf:resource="#пробл"/>
+  <has_word rdf:resource="#тянет"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#пробл">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_19">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#отличн"/>
+  <has_word rdf:resource="#камен"/>
+  <has_word rdf:resource="#сво"/>
+  <has_word rdf:resource="#деньг"/>
+  <has_word rdf:resource="#ситилинк"/>
+  <has_word rdf:resource="#дешевл"/>
+  <has_word rdf:resource="#повод"/>
+  <has_word rdf:resource="#упаковк"/>
+  <has_word rdf:resource="#люб"/>
+  <has_word rdf:resource="#магазин"/>
+  <has_word rdf:resource="#поня"/>
+  <has_word rdf:resource="#прост"/>
+  <has_word rdf:resource="#пупырчат"/>
+  <has_word rdf:resource="#пленк"/>
+  <has_word rdf:resource="#держат"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#сво">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ситилинк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#дешевл">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#повод">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#упаковк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#магазин">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#поня">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#пупырчат">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#пленк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#держат">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_20">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#ядер"/>
+  <has_word rdf:resource="#поток"/>
+  <has_word rdf:resource="#холодн"/>
+  <has_word rdf:resource="#прожорлив"/>
+  <has_word rdf:resource="#процессор"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#поток">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#прожорлив">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_21">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#классик"/>
+  <has_word rdf:resource="#дан"/>
+  <has_word rdf:resource="#момент"/>
+  <has_word rdf:resource="#лучш"/>
+  <has_word rdf:resource="#производительн"/>
+  <has_word rdf:resource="#цен"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#классик">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#момент">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_22">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#холодн"/>
+  <has_word rdf:resource="#греет"/>
+  <has_word rdf:resource="#сравнен"/>
+  <has_word rdf:resource="#13м"/>
+  <has_word rdf:resource="#поколен"/>
+  <has_word rdf:resource="#топ"/>
+  <has_word rdf:resource="#сво"/>
+  <has_word rdf:resource="#деньг"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#сравнен">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#13м">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#поколен">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#топ">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_23">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#отличн"/>
+  <has_word rdf:resource="#производительн"/>
+  <has_word rdf:resource="#проц"/>
+  <has_word rdf:resource="#игров"/>
+  <has_word rdf:resource="#компьютер"/>
+  <has_word rdf:resource="#штатн"/>
+  <has_word rdf:resource="#интеловск"/>
+  <has_word rdf:resource="#медн"/>
+  <has_word rdf:resource="#кулер"/>
+  <has_word rdf:resource="#справля"/>
+  <has_word rdf:resource="#даж"/>
+  <has_word rdf:resource="#слышн"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#игров">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#компьютер">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#штатн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#интеловск">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#медн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#справля">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#слышн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_24">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#быстр"/>
+  <has_word rdf:resource="#холодн"/>
+  <has_word rdf:resource="#зна"/>
+  <has_word rdf:resource="#загруз"/>
+  <has_word rdf:resource="#100"/>
+  <has_word rdf:resource="#обычн"/>
+  <has_word rdf:resource="#домашн"/>
+  <has_word rdf:resource="#режим"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#быстр">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#загруз">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#100">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#обычн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#домашн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#режим">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_25">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#хорош"/>
+  <has_word rdf:resource="#камен"/>
+  <has_word rdf:resource="#рад"/>
+  <has_word rdf:resource="#постав"/>
+  <has_word rdf:resource="#MSI"/>
+  <has_word rdf:resource="#PRO"/>
+  <has_word rdf:resource="#H610M-E"/>
+  <has_word rdf:resource="#DDR4"/>
+  <has_word rdf:resource="#башн"/>
+  <has_word rdf:resource="#сравнен"/>
+  <has_word rdf:resource="#предыдущ"/>
+  <has_word rdf:resource="#6700"/>
+  <has_word rdf:resource="#быстр"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#рад">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#MSI">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#PRO">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#H610M-E">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#башн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#предыдущ">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#6700">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_26">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#шустр"/>
+  <has_word rdf:resource="#камен"/>
+  <has_word rdf:resource="#даж"/>
+  <has_word rdf:resource="#требовательн"/>
+  <has_word rdf:resource="#игр"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#шустр">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#требовательн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_27">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#нормальн"/>
+  <has_word rdf:resource="#процессор"/>
+  <has_word rdf:resource="#повседневн"/>
+  <has_word rdf:resource="#задач"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#нормальн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#повседневн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#задач">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_28">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#отличн"/>
+  <has_word rdf:resource="#процессор"/>
+  <has_word rdf:resource="#пар"/>
+  <has_word rdf:resource="#ртх307"/>
+  <has_word rdf:resource="#показа"/>
+  <has_word rdf:resource="#себ"/>
+  <has_word rdf:resource="#очен"/>
+  <has_word rdf:resource="#хорош"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ртх307">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#показа">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#себ">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_29">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#хорош"/>
+  <has_word rdf:resource="#проц"/>
+  <has_word rdf:resource="#совет"/>
+  <has_word rdf:resource="#сво"/>
+  <has_word rdf:resource="#категор"/>
+  <has_word rdf:resource="#цен"/>
+  <has_word rdf:resource="#лучш"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#совет">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#категор">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_30">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#хорош"/>
+  <has_word rdf:resource="#камен"/>
+  <has_word rdf:resource="#работа"/>
+  <has_word rdf:resource="#пар"/>
+  <has_word rdf:resource="#3060"/>
+  <has_word rdf:resource="#игра"/>
+  <has_word rdf:resource="#тарк"/>
+  <has_word rdf:resource="#танк"/>
+  <has_word rdf:resource="#дот"/>
+  <has_word rdf:resource="#рендер"/>
+  <has_word rdf:resource="#тянет"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#игра">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#тарк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#танк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#дот">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#рендер">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_31">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#отличн"/>
+  <has_word rdf:resource="#камен"/>
+  <has_word rdf:resource="#тянет"/>
+  <has_word rdf:resource="#высок"/>
+  <has_word rdf:resource="#ультр"/>
+  <has_word rdf:resource="#настройк"/>
+  <has_word rdf:resource="#горяч"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#высок">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#горяч">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_32">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#отличн"/>
+  <has_word rdf:resource="#проц"/>
+  <has_word rdf:resource="#связк"/>
+  <has_word rdf:resource="#3070ти"/>
+  <has_word rdf:resource="#очен"/>
+  <has_word rdf:resource="#себ"/>
+  <has_word rdf:resource="#хорош"/>
+  <has_word rdf:resource="#показыва"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#3070ти">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#показыва">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_33">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#отличн"/>
+  <has_word rdf:resource="#народн"/>
+  <has_word rdf:resource="#процессор"/>
+  <has_word rdf:resource="#всем"/>
+  <has_word rdf:resource="#совет"/>
+  <has_word rdf:resource="#давн"/>
+  <has_word rdf:resource="#мечта"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#народн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#всем">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#давн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#мечта">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_34">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#производительн"/>
+  <has_word rdf:resource="#высок"/>
+  <has_word rdf:resource="#уровн"/>
+  <has_word rdf:resource="#встройк"/>
+  <has_word rdf:resource="#можн"/>
+  <has_word rdf:resource="#поигра"/>
+  <has_word rdf:resource="#большинств"/>
+  <has_word rdf:resource="#игр"/>
+  <has_word rdf:resource="#налич"/>
+  <has_word rdf:resource="#хорош"/>
+  <has_word rdf:resource="#оперативн"/>
+  <has_word rdf:resource="#памят"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#уровн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#встройк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#поигра">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#большинств">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#налич">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_35">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#очен"/>
+  <has_word rdf:resource="#производительн"/>
+  <has_word rdf:resource="#систем"/>
+  <has_word rdf:resource="#перв"/>
+  <has_word rdf:resource="#реальн"/>
+  <has_word rdf:resource="#энтузиаст"/>
+  <has_word rdf:resource="#покупк"/>
+  <has_word rdf:resource="#дан"/>
+  <has_word rdf:resource="#проц"/>
+  <has_word rdf:resource="#получа"/>
+  <has_word rdf:resource="#нормальн"/>
+  <has_word rdf:resource="#видик"/>
+  <has_word rdf:resource="#достаточн"/>
+  <has_word rdf:resource="#демократичн"/>
+  <has_word rdf:resource="#цен"/>
+  <has_word rdf:resource="#занима"/>
+  <has_word rdf:resource="#сборк"/>
+  <has_word rdf:resource="#всем"/>
+  <has_word rdf:resource="#ком"/>
+  <has_word rdf:resource="#советова"/>
+  <has_word rdf:resource="#довольн"/>
+  <has_word rdf:resource="#интел"/>
+  <has_word rdf:resource="#параметр"/>
+  <has_word rdf:resource="#прост"/>
+  <has_word rdf:resource="#дорож"/>
+  <has_word rdf:resource="#забыва"/>
+  <has_word rdf:resource="#нов"/>
+  <has_word rdf:resource="#поколен"/>
+  <has_word rdf:resource="#материнк"/>
+  <has_word rdf:resource="#AMD"/>
+  <has_word rdf:resource="#забот"/>
+  <has_word rdf:resource="#сво"/>
+  <has_word rdf:resource="#потребител"/>
+  <has_word rdf:resource="#довод"/>
+  <has_word rdf:resource="#сокет"/>
+  <has_word rdf:resource="#трясет"/>
+  <has_word rdf:resource="#карма"/>
+  <has_word rdf:resource="#обывател"/>
+  <has_word rdf:resource="#собрат"/>
+  <has_word rdf:resource="#продолжа"/>
+  <has_word rdf:resource="#дела"/>
+  <has_word rdf:resource="#однозначн"/>
+  <has_word rdf:resource="#рекоменд"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#систем">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#перв">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#реальн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#энтузиаст">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#покупк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#получа">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#видик">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#демократичн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#занима">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#сборк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ком">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#советова">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#интел">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#параметр">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#дорож">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#забыва">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#нов">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#AMD">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#забот">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#потребител">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#довод">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#трясет">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#карма">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#обывател">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#собрат">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#продолжа">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#дела">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#однозначн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_36">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#разблокирова"/>
+  <has_word rdf:resource="#множител"/>
+  <has_word rdf:resource="#прекрасн"/>
+  <has_word rdf:resource="#работа"/>
+  <has_word rdf:resource="#памят"/>
+  <has_word rdf:resource="#3600"/>
+  <has_word rdf:resource="#Mhz"/>
+  <has_word rdf:resource="#налич"/>
+  <has_word rdf:resource="#встроен"/>
+  <has_word rdf:resource="#графическ"/>
+  <has_word rdf:resource="#ядр"/>
+  <has_word rdf:resource="#отсутств"/>
+  <has_word rdf:resource="#основн"/>
+  <has_word rdf:resource="#видеокарт"/>
+  <has_word rdf:resource="#потянет"/>
+  <has_word rdf:resource="#нема"/>
+  <has_word rdf:resource="#игрушек"/>
+  <has_word rdf:resource="#хот"/>
+  <has_word rdf:resource="#максимум"/>
+  <has_word rdf:resource="#придет"/>
+  <has_word rdf:resource="#поигра"/>
+  <has_word rdf:resource="#настройк"/>
+  <has_word rdf:resource="#график"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#разблокирова">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#множител">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#3600">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Mhz">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#встроен">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#графическ">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ядр">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#отсутств">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#основн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#видеокарт">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#потянет">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#нема">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#игрушек">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#максимум">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#придет">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#график">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_37">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#встройк"/>
+  <has_word rdf:resource="#высок"/>
+  <has_word rdf:resource="#производительн"/>
+  <has_word rdf:resource="#хот"/>
+  <has_word rdf:resource="#уступа"/>
+  <has_word rdf:resource="#десктопн"/>
+  <has_word rdf:resource="#видеокарт"/>
+  <has_word rdf:resource="#разблокирова"/>
+  <has_word rdf:resource="#множител"/>
+  <has_word rdf:resource="#процессор"/>
+  <has_word rdf:resource="#спокойн"/>
+  <has_word rdf:resource="#пережевыва"/>
+  <has_word rdf:resource="#памя"/>
+  <has_word rdf:resource="#частот"/>
+  <has_word rdf:resource="#3600"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#уступа">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#десктопн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#спокойн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#пережевыва">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_38">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#отличн"/>
+  <has_word rdf:resource="#процессор"/>
+  <has_word rdf:resource="#домашн"/>
+  <has_word rdf:resource="#пользован"/>
+  <has_word rdf:resource="#работы-"/>
+  <has_word rdf:resource="#вариант"/>
+  <has_word rdf:resource="#работа"/>
+  <has_word rdf:resource="#CAD"/>
+  <has_word rdf:resource="#смотрет"/>
+  <has_word rdf:resource="#виде"/>
+  <has_word rdf:resource="#погоня"/>
+  <has_word rdf:resource="#танчики-"/>
+  <has_word rdf:resource="#кстат"/>
+  <has_word rdf:resource="#WоTв"/>
+  <has_word rdf:resource="#клиент"/>
+  <has_word rdf:resource="#высок"/>
+  <has_word rdf:resource="#фпс"/>
+  <has_word rdf:resource="#встройк"/>
+  <has_word rdf:resource="#42-65"/>
+  <has_word rdf:resource="#очен"/>
+  <has_word rdf:resource="#даж"/>
+  <has_word rdf:resource="#плох"/>
+  <has_word rdf:resource="#нетребовательн"/>
+  <has_word rdf:resource="#пользовател"/>
+  <has_word rdf:resource="#дума"/>
+  <has_word rdf:resource="#зач"/>
+  <has_word rdf:resource="#видеокарт"/>
+  <has_word rdf:resource="#..."/>
+  <has_word rdf:resource="#довол"/>
+  <has_word rdf:resource="#процессором-"/>
+  <has_word rdf:resource="#рекоменд"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#пользован">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#работы-">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#вариант">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CAD">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#смотрет">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#виде">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#погоня">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#танчики-">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#кстат">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#WоTв">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#клиент">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#фпс">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#42-65">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#плох">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#нетребовательн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#пользовател">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#зач">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#...">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#процессором-">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_39">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#отличн"/>
+  <has_word rdf:resource="#проц"/>
+  <has_word rdf:resource="#постав"/>
+  <has_word rdf:resource="#материнск"/>
+  <has_word rdf:resource="#плат"/>
+  <has_word rdf:resource="#Asus"/>
+  <has_word rdf:resource="#Prime"/>
+  <has_word rdf:resource="#b450"/>
+  <has_word rdf:resource="#plus"/>
+  <has_word rdf:resource="#оперативк"/>
+  <has_word rdf:resource="#Kingston"/>
+  <has_word rdf:resource="#Fury"/>
+  <has_word rdf:resource="#best"/>
+  <has_word rdf:resource="#Black"/>
+  <has_word rdf:resource="#3200"/>
+  <has_word rdf:resource="#систем"/>
+  <has_word rdf:resource="#завел"/>
+  <has_word rdf:resource="#перв"/>
+  <has_word rdf:resource="#работа"/>
+  <has_word rdf:resource="#стабильн"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Prime">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#b450">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#plus">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#best">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#стабильн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_40">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#современ"/>
+  <has_word rdf:resource="#мир"/>
+  <has_word rdf:resource="#когд"/>
+  <has_word rdf:resource="#видеокарт"/>
+  <has_word rdf:resource="#сто"/>
+  <has_word rdf:resource="#космическ"/>
+  <has_word rdf:resource="#цен"/>
+  <has_word rdf:resource="#счита"/>
+  <has_word rdf:resource="#процессор"/>
+  <has_word rdf:resource="#отличн"/>
+  <has_word rdf:resource="#вариант"/>
+  <has_word rdf:resource="#средн"/>
+  <has_word rdf:resource="#игр"/>
+  <has_word rdf:resource="#нов"/>
+  <has_word rdf:resource="#очен"/>
+  <has_word rdf:resource="#требовательн"/>
+  <has_word rdf:resource="#потянет"/>
+  <has_word rdf:resource="#уверя"/>
+  <has_word rdf:resource="#игра"/>
+  <has_word rdf:resource="#комфортн"/>
+  <has_word rdf:resource="#люб"/>
+  <has_word rdf:resource="#дума"/>
+  <has_word rdf:resource="#перв"/>
+  <has_word rdf:resource="#врем"/>
+  <has_word rdf:resource="#встроен"/>
+  <has_word rdf:resource="#график"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#современ">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#мир">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#когд">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#сто">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#космическ">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#счита">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#средн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#уверя">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#комфортн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#врем">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_41">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#скорост"/>
+  <has_word rdf:resource="#цен"/>
+  <has_word rdf:resource="#отличн"/>
+  <has_word rdf:resource="#встроен"/>
+  <has_word rdf:resource="#виде"/>
+  <has_word rdf:resource="#мен"/>
+  <has_word rdf:resource="#комп"/>
+  <has_word rdf:resource="#подключ"/>
+  <has_word rdf:resource="#телевизор"/>
+  <has_word rdf:resource="#встройк"/>
+  <has_word rdf:resource="#интел"/>
+  <has_word rdf:resource="#проц"/>
+  <has_word rdf:resource="#Intel"/>
+  <has_word rdf:resource="#I3-10150"/>
+  <has_word rdf:resource="#постоя"/>
+  <has_word rdf:resource="#проблем"/>
+  <has_word rdf:resource="#туп"/>
+  <has_word rdf:resource="#тянул"/>
+  <has_word rdf:resource="#перешел"/>
+  <has_word rdf:resource="#Ryzen"/>
+  <has_word rdf:resource="#тепер"/>
+  <has_word rdf:resource="#прост"/>
+  <has_word rdf:resource="#игр"/>
+  <has_word rdf:resource="#игра"/>
+  <has_word rdf:resource="#поэт"/>
+  <has_word rdf:resource="#отдава"/>
+  <has_word rdf:resource="#ненужн"/>
+  <has_word rdf:resource="#приблуд"/>
+  <has_word rdf:resource="#вид"/>
+  <has_word rdf:resource="#дискретн"/>
+  <has_word rdf:resource="#видеокарт"/>
+  <has_word rdf:resource="#стоимост"/>
+  <has_word rdf:resource="#больш"/>
+  <has_word rdf:resource="#сто"/>
+  <has_word rdf:resource="#остальн"/>
+  <has_word rdf:resource="#системник"/>
+  <has_word rdf:resource="#глуповат"/>
+  <has_word rdf:resource="#сожален"/>
+  <has_word rdf:resource="#врем"/>
+  <has_word rdf:resource="#когд"/>
+  <has_word rdf:resource="#Radeon"/>
+  <has_word rdf:resource="#Sapphire"/>
+  <has_word rdf:resource="#280X"/>
+  <has_word rdf:resource="#250"/>
+  <has_word rdf:resource="#давн"/>
+  <has_word rdf:resource="#прошл"/>
+  <has_word rdf:resource="#..."/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#скорост">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#мен">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#комп">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#подключ">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#телевизор">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#I3-10150">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#постоя">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#проблем">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#туп">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#тянул">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#тепер">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#поэт">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#отдава">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ненужн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#приблуд">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#дискретн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#стоимост">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#остальн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#системник">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#глуповат">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#сожален">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Radeon">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Sapphire">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#280X">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#250">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#прошл">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_42">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#работа"/>
+  <has_word rdf:resource="#разогна"/>
+  <has_word rdf:resource="#памят"/>
+  <has_word rdf:resource="#3933mhz"/>
+  <has_word rdf:resource="#нагрузк"/>
+  <has_word rdf:resource="#разгоня"/>
+  <has_word rdf:resource="#4,4ghz"/>
+  <has_word rdf:resource="#стресс"/>
+  <has_word rdf:resource="#тест"/>
+  <has_word rdf:resource="#больш"/>
+  <has_word rdf:resource="#градус"/>
+  <has_word rdf:resource="#грел"/>
+  <has_word rdf:resource="#встроен"/>
+  <has_word rdf:resource="#график"/>
+  <has_word rdf:resource="#уровн"/>
+  <has_word rdf:resource="#gtx1650"/>
+  <has_word rdf:resource="#смел"/>
+  <has_word rdf:resource="#игра"/>
+  <has_word rdf:resource="#контр"/>
+  <has_word rdf:resource="#страйк"/>
+  <has_word rdf:resource="#танк"/>
+  <has_word rdf:resource="#фортнайт"/>
+  <has_word rdf:resource="#дот"/>
+  <has_word rdf:resource="#...."/>
+  <has_word rdf:resource="#бол"/>
+  <has_word rdf:resource="#амбициозн"/>
+  <has_word rdf:resource="#проект"/>
+  <has_word rdf:resource="#конечн"/>
+  <has_word rdf:resource="#дискретк"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#3933mhz">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#нагрузк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#разгоня">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#4,4ghz">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#gtx1650">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#смел">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#контр">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#страйк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#фортнайт">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#....">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#бол">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#амбициозн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#проект">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#дискретк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_43">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#высок"/>
+  <has_word rdf:resource="#базов"/>
+  <has_word rdf:resource="#частот"/>
+  <has_word rdf:resource="#имеет"/>
+  <has_word rdf:resource="#потанцева"/>
+  <has_word rdf:resource="#разгон"/>
+  <has_word rdf:resource="#виде"/>
+  <has_word rdf:resource="#ядр"/>
+  <has_word rdf:resource="#цен"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#базов">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#имеет">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#потанцева">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_44">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#отличн"/>
+  <has_word rdf:resource="#шестиядерник"/>
+  <has_word rdf:resource="#двенадцатипоточник"/>
+  <has_word rdf:resource="#очен"/>
+  <has_word rdf:resource="#даж"/>
+  <has_word rdf:resource="#годн"/>
+  <has_word rdf:resource="#видеоядр"/>
+  <has_word rdf:resource="#сво"/>
+  <has_word rdf:resource="#деньг"/>
+  <has_word rdf:resource="#разумеет"/>
+  <has_word rdf:resource="#сильн"/>
+  <has_word rdf:resource="#греет"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#шестиядерник">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#двенадцатипоточник">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#годн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#видеоядр">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#разумеет">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_45">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#отличн"/>
+  <has_word rdf:resource="#процессор"/>
+  <has_word rdf:resource="#брал"/>
+  <has_word rdf:resource="#сборк"/>
+  <has_word rdf:resource="#видеокарт"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_46">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#очен"/>
+  <has_word rdf:resource="#производительн"/>
+  <has_word rdf:resource="#ядр"/>
+  <has_word rdf:resource="#поток"/>
+  <has_word rdf:resource="#отличн"/>
+  <has_word rdf:resource="#встроен"/>
+  <has_word rdf:resource="#график"/>
+  <has_word rdf:resource="#уровн"/>
+  <has_word rdf:resource="#GTX"/>
+  <has_word rdf:resource="#1050"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#GTX">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#1050">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_47">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#графическ"/>
+  <has_word rdf:resource="#проц"/>
+  <has_word rdf:resource="#ест"/>
+  <has_word rdf:resource="#строен"/>
+  <has_word rdf:resource="#довольн"/>
+  <has_word rdf:resource="#плох"/>
+  <has_word rdf:resource="#цен"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ест">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#строен">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_48">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#-цен"/>
+  <has_word rdf:resource="#учет"/>
+  <has_word rdf:resource="#встроен"/>
+  <has_word rdf:resource="#график"/>
+  <has_word rdf:resource="#отличн"/>
+  <has_word rdf:resource="#производительн"/>
+  <has_word rdf:resource="#-драйвер"/>
+  <has_word rdf:resource="#обновля"/>
+  <has_word rdf:resource="#VPN"/>
+  <has_word rdf:resource="#отлич"/>
+  <has_word rdf:resource="#Intel"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#-цен">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#учет">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#-драйвер">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#обновля">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#VPN">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#отлич">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#positive_review_49">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#positive"/>
+  <has_word rdf:resource="#встроен"/>
+  <has_word rdf:resource="#виде"/>
+  <has_word rdf:resource="#позволя"/>
+  <has_word rdf:resource="#игра"/>
+  <has_word rdf:resource="#большинств"/>
+  <has_word rdf:resource="#игр"/>
+  <has_word rdf:resource="#Athlon"/>
+  <has_word rdf:resource="#3000G"/>
+  <has_word rdf:resource="#тянул"/>
+  <has_word rdf:resource="#2021"/>
+  <has_word rdf:resource="#год"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#позволя">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Athlon">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#3000G">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#2021">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_0">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#недостаток"/>
+  <has_word rdf:resource="#тольк"/>
+  <has_word rdf:resource="#видим"/>
+  <has_word rdf:resource="#довольн"/>
+  <has_word rdf:resource="#верс"/>
+  <has_word rdf:resource="#брал"/>
+  <has_word rdf:resource="#ситилинк"/>
+  <has_word rdf:resource="#серьезн"/>
+  <has_word rdf:resource="#привоз"/>
+  <has_word rdf:resource="#камн"/>
+  <has_word rdf:resource="#даж"/>
+  <has_word rdf:resource="#обернутн"/>
+  <has_word rdf:resource="#бумаг"/>
+  <has_word rdf:resource="#канцелярск"/>
+  <has_word rdf:resource="#резинк"/>
+  <has_word rdf:resource="#блистер"/>
+  <has_word rdf:resource="#говор"/>
+  <has_word rdf:resource="#господ"/>
+  <has_word rdf:resource="#прихож"/>
+  <has_word rdf:resource="#россып"/>
+  <has_word rdf:resource="#лежат"/>
+  <has_word rdf:resource="#пупырк"/>
+  <has_word rdf:resource="#проц"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#недостаток">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#тольк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#видим">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#верс">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#серьезн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#привоз">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#камн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#обернутн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#бумаг">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#канцелярск">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#резинк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#блистер">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#говор">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#господ">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#прихож">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#россып">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#лежат">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#пупырк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_1">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#цен"/>
+  <has_word rdf:resource="#14к"/>
+  <has_word rdf:resource="#нег"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#14к">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_2">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#упаковк"/>
+  <has_word rdf:resource="#нормальн"/>
+  <has_word rdf:resource="#пупырчат"/>
+  <has_word rdf:resource="#кусочк"/>
+  <has_word rdf:resource="#пленк"/>
+  <has_word rdf:resource="#доста"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#кусочк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#доста">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_3">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#дорог"/>
+  <has_word rdf:resource="#материнк"/>
+  <has_word rdf:resource="#lga1700"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#lga1700">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_4">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#быстр"/>
+  <has_word rdf:resource="#раскупа"/>
+  <has_word rdf:resource="#поколен"/>
+  <has_word rdf:resource="#росс"/>
+  <has_word rdf:resource="#завоз"/>
+  <has_word rdf:resource="#собира"/>
+  <has_word rdf:resource="#частот"/>
+  <has_word rdf:resource="#одн"/>
+  <has_word rdf:resource="#ядр"/>
+  <has_word rdf:resource="#поменьш"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#раскупа">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#росс">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#завоз">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#собира">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#одн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#поменьш">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_5">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#есл"/>
+  <has_word rdf:resource="#сто"/>
+  <has_word rdf:resource="#12400"/>
+  <has_word rdf:resource="#жаловат"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#есл">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#12400">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#жаловат">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_6">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#упаковк"/>
+  <has_word rdf:resource="#конечн"/>
+  <has_word rdf:resource="#вопрос"/>
+  <has_word rdf:resource="#понятн"/>
+  <has_word rdf:resource="#верс"/>
+  <has_word rdf:resource="#OEM"/>
+  <has_word rdf:resource="#хот"/>
+  <has_word rdf:resource="#пупырк"/>
+  <has_word rdf:resource="#завернут"/>
+  <has_word rdf:resource="#накиньт"/>
+  <has_word rdf:resource="#стоимост"/>
+  <has_word rdf:resource="#100"/>
+  <has_word rdf:resource="#рубл"/>
+  <has_word rdf:resource="#равн"/>
+  <has_word rdf:resource="#взял"/>
+  <has_word rdf:resource="#выдач"/>
+  <has_word rdf:resource="#заказ"/>
+  <has_word rdf:resource="#проц"/>
+  <has_word rdf:resource="#ладошк"/>
+  <has_word rdf:resource="#полож"/>
+  <has_word rdf:resource="#всег"/>
+  <has_word rdf:resource="#добр"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#вопрос">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#понятн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#OEM">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#завернут">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#накиньт">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#рубл">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#равн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#выдач">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#заказ">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ладошк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#добр">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_7">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#цен"/>
+  <has_word rdf:resource="#хотел"/>
+  <has_word rdf:resource="#дешевл"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#хотел">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_8">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#чипсет"/>
+  <has_word rdf:resource="#сильн"/>
+  <has_word rdf:resource="#греет"/>
+  <has_word rdf:resource="#разгон"/>
+  <has_word rdf:resource="#мног"/>
+  <has_word rdf:resource="#выб"/>
+  <has_word rdf:resource="#производительн"/>
+  <has_word rdf:resource="#получ"/>
+  <has_word rdf:resource="#тих"/>
+  <has_word rdf:resource="#холодн"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#выб">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#получ">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#тих">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_9">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#проверк"/>
+  <has_word rdf:resource="#мелк"/>
+  <has_word rdf:resource="#царапин"/>
+  <has_word rdf:resource="#явн"/>
+  <has_word rdf:resource="#отпечатк"/>
+  <has_word rdf:resource="#грязн"/>
+  <has_word rdf:resource="#пальц"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#проверк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#мелк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#царапин">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#явн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#отпечатк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#грязн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#пальц">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_10">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#пупырчат"/>
+  <has_word rdf:resource="#упаковк"/>
+  <has_word rdf:resource="#какого-либ"/>
+  <has_word rdf:resource="#скотч"/>
+  <has_word rdf:resource="#закреплен"/>
+  <has_word rdf:resource="#серьезн"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#какого-либ">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#скотч">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#закреплен">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_11">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#вообщ"/>
+  <has_word rdf:resource="#никак"/>
+  <has_word rdf:resource="#упаковк"/>
+  <has_word rdf:resource="#магазин"/>
+  <has_word rdf:resource="#ул."/>
+  <has_word rdf:resource="#пришвин"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#вообщ">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#никак">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ул.">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#пришвин">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_12">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#удив"/>
+  <has_word rdf:resource="#упаковк"/>
+  <has_word rdf:resource="#процессор"/>
+  <has_word rdf:resource="#точн"/>
+  <has_word rdf:resource="#полн"/>
+  <has_word rdf:resource="#отсутств"/>
+  <has_word rdf:resource="#незакрыт"/>
+  <has_word rdf:resource="#кусочек"/>
+  <has_word rdf:resource="#пупырк"/>
+  <has_word rdf:resource="#незафиксирова"/>
+  <has_word rdf:resource="#хот"/>
+  <has_word rdf:resource="#резинк"/>
+  <has_word rdf:resource="#счита"/>
+  <has_word rdf:resource="#неужел"/>
+  <has_word rdf:resource="#нельз"/>
+  <has_word rdf:resource="#стол"/>
+  <has_word rdf:resource="#цен"/>
+  <has_word rdf:resource="#компонент"/>
+  <has_word rdf:resource="#упакова"/>
+  <has_word rdf:resource="#зип-пакет"/>
+  <has_word rdf:resource="#даж"/>
+  <has_word rdf:resource="#есл"/>
+  <has_word rdf:resource="#поступа"/>
+  <has_word rdf:resource="#фасова"/>
+  <has_word rdf:resource="#штук"/>
+  <has_word rdf:resource="#реализует"/>
+  <has_word rdf:resource="#россып"/>
+  <has_word rdf:resource="#забир"/>
+  <has_word rdf:resource="#товар"/>
+  <has_word rdf:resource="#пункт"/>
+  <has_word rdf:resource="#выдач"/>
+  <has_word rdf:resource="#вид"/>
+  <has_word rdf:resource="#котор"/>
+  <has_word rdf:resource="#приход"/>
+  <has_word rdf:resource="#покупател"/>
+  <has_word rdf:resource="#берет"/>
+  <has_word rdf:resource="#сво"/>
+  <has_word rdf:resource="#страх"/>
+  <has_word rdf:resource="#риск"/>
+  <has_word rdf:resource="#вероятн"/>
+  <has_word rdf:resource="#50/50"/>
+  <has_word rdf:resource="#либ"/>
+  <has_word rdf:resource="#работа"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#удив">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#точн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#полн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#незакрыт">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#кусочек">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#незафиксирова">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#неужел">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#нельз">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#стол">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#компонент">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#упакова">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#зип-пакет">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#поступа">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#фасова">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#штук">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#реализует">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#забир">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#товар">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#пункт">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#котор">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#приход">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#покупател">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#берет">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#страх">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#риск">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#вероятн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#50/50">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#либ">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_13">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#упаковк"/>
+  <has_word rdf:resource="#прост"/>
+  <has_word rdf:resource="#оемищ"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#оемищ">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_14">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#параллельн"/>
+  <has_word rdf:resource="#импорт"/>
+  <has_word rdf:resource="#результат"/>
+  <has_word rdf:resource="#цен"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#параллельн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#импорт">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#результат">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_15">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#комплект"/>
+  <has_word rdf:resource="#поставк"/>
+  <has_word rdf:resource="#чист"/>
+  <has_word rdf:resource="#процессор"/>
+  <has_word rdf:resource="#даж"/>
+  <has_word rdf:resource="#пластиков"/>
+  <has_word rdf:resource="#контейнер"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#поставк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#чист">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#пластиков">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#контейнер">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_16">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#качеств"/>
+  <has_word rdf:resource="#упаковк"/>
+  <has_word rdf:resource="#ситилинк"/>
+  <has_word rdf:resource="#оставля"/>
+  <has_word rdf:resource="#жела"/>
+  <has_word rdf:resource="#лучш"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#качеств">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#оставля">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#жела">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_17">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#цен"/>
+  <has_word rdf:resource="#год"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_18">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#тольк"/>
+  <has_word rdf:resource="#мен"/>
+  <has_word rdf:resource="#ситилинк"/>
+  <has_word rdf:resource="#процессор"/>
+  <has_word rdf:resource="#выда"/>
+  <has_word rdf:resource="#бег"/>
+  <has_word rdf:resource="#нич"/>
+  <has_word rdf:resource="#вообщ"/>
+  <has_word rdf:resource="#прост"/>
+  <has_word rdf:resource="#хот"/>
+  <has_word rdf:resource="#деньг"/>
+  <has_word rdf:resource="#могл"/>
+  <has_word rdf:resource="#зиплок"/>
+  <has_word rdf:resource="#пакетик"/>
+  <has_word rdf:resource="#куп"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#бег">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#нич">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#могл">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#зиплок">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#пакетик">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#куп">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_19">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#уреза"/>
+  <has_word rdf:resource="#кэш"/>
+  <has_word rdf:resource="#сравнен"/>
+  <has_word rdf:resource="#5600х"/>
+  <has_word rdf:resource="#графическ"/>
+  <has_word rdf:resource="#ядр"/>
+  <has_word rdf:resource="#компенсир"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#уреза">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#кэш">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#компенсир">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_20">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#недостаток"/>
+  <has_word rdf:resource="#всег"/>
+  <has_word rdf:resource="#ножк"/>
+  <has_word rdf:resource="#..."/>
+  <has_word rdf:resource="#ноооожк"/>
+  <has_word rdf:resource="#рад"/>
+  <has_word rdf:resource="#дал"/>
+  <has_word rdf:resource="#lga"/>
+  <has_word rdf:resource="#хот"/>
+  <has_word rdf:resource="#есл"/>
+  <has_word rdf:resource="#рук"/>
+  <has_word rdf:resource="#прям"/>
+  <has_word rdf:resource="#проблем"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ножк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ноооожк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#дал">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#lga">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#рук">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#прям">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_21">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#установ"/>
+  <has_word rdf:resource="#мат"/>
+  <has_word rdf:resource="#GIGABYTE"/>
+  <has_word rdf:resource="#X570S"/>
+  <has_word rdf:resource="#посл"/>
+  <has_word rdf:resource="#установк"/>
+  <has_word rdf:resource="#драйвер"/>
+  <has_word rdf:resource="#встроен"/>
+  <has_word rdf:resource="#график"/>
+  <has_word rdf:resource="#комп"/>
+  <has_word rdf:resource="#работа"/>
+  <has_word rdf:resource="#секунд"/>
+  <has_word rdf:resource="#пот"/>
+  <has_word rdf:resource="#черн"/>
+  <has_word rdf:resource="#экра"/>
+  <has_word rdf:resource="#реагир"/>
+  <has_word rdf:resource="#кулер"/>
+  <has_word rdf:resource="#крутя"/>
+  <has_word rdf:resource="#плат"/>
+  <has_word rdf:resource="#стоя"/>
+  <has_word rdf:resource="#верс"/>
+  <has_word rdf:resource="#BIOS"/>
+  <has_word rdf:resource="#обнов"/>
+  <has_word rdf:resource="#проблем"/>
+  <has_word rdf:resource="#врод"/>
+  <has_word rdf:resource="#ушл"/>
+  <has_word rdf:resource="#минут"/>
+  <has_word rdf:resource="#прогна"/>
+  <has_word rdf:resource="#OCCT"/>
+  <has_word rdf:resource="#буд"/>
+  <has_word rdf:resource="#смотрет"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#установ">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#GIGABYTE">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#X570S">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#посл">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#установк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#драйвер">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#секунд">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#черн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#экра">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#реагир">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#крутя">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#стоя">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#BIOS">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#обнов">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ушл">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#минут">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#прогна">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#OCCT">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_22">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#дума"/>
+  <has_word rdf:resource="#слишк"/>
+  <has_word rdf:resource="#сильн"/>
+  <has_word rdf:resource="#распиар"/>
+  <has_word rdf:resource="#дан"/>
+  <has_word rdf:resource="#процессор"/>
+  <has_word rdf:resource="#современ"/>
+  <has_word rdf:resource="#игр"/>
+  <has_word rdf:resource="#подоб"/>
+  <has_word rdf:resource="#киберпанк"/>
+  <has_word rdf:resource="#потянет"/>
+  <has_word rdf:resource="#игра"/>
+  <has_word rdf:resource="#комфортн"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#слишк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#распиар">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#подоб">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_23">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#-уреза"/>
+  <has_word rdf:resource="#кэш"/>
+  <has_word rdf:resource="#-pci"/>
+  <has_word rdf:resource="#3.0"/>
+  <has_word rdf:resource="#конечн"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#-уреза">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#-pci">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#3.0">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_24">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#кто-т"/>
+  <has_word rdf:resource="#скажет"/>
+  <has_word rdf:resource="#кэш"/>
+  <has_word rdf:resource="#уровн"/>
+  <has_word rdf:resource="#маловат"/>
+  <has_word rdf:resource="#показа"/>
+  <has_word rdf:resource="#проблем"/>
+  <has_word rdf:resource="#т.к"/>
+  <has_word rdf:resource="#всем"/>
+  <has_word rdf:resource="#задач"/>
+  <has_word rdf:resource="#процессор"/>
+  <has_word rdf:resource="#достойн"/>
+  <has_word rdf:resource="#справля"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#кто-т">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#скажет">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#маловат">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#т.к">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#достойн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_25">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#заниж"/>
+  <has_word rdf:resource="#кэш"/>
+  <has_word rdf:resource="#важн"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#заниж">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#важн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_26">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#дан"/>
+  <has_word rdf:resource="#момент"/>
+  <has_word rdf:resource="#лучш"/>
+  <has_word rdf:resource="#наверн"/>
+  <has_word rdf:resource="#рассматрива"/>
+  <has_word rdf:resource="#нибуд"/>
+  <has_word rdf:resource="#5500"/>
+  <has_word rdf:resource="#шест"/>
+  <has_word rdf:resource="#ядр"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#наверн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#рассматрива">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#нибуд">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#5500">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#шест">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_27">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#обнаруж"/>
+  <has_word rdf:resource="#пок"/>
+  <has_word rdf:resource="#кром"/>
+  <has_word rdf:resource="#драйвер"/>
+  <has_word rdf:resource="#разумеет"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#обнаруж">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#кром">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_28">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#скачет"/>
+  <has_word rdf:resource="#частот"/>
+  <has_word rdf:resource="#скор"/>
+  <has_word rdf:resource="#всег"/>
+  <has_word rdf:resource="#настро"/>
+  <has_word rdf:resource="#крив"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#скачет">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#скор">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#настро">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#крив">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_29">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#мал"/>
+  <has_word rdf:resource="#кэш"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_30">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#очен"/>
+  <has_word rdf:resource="#удив"/>
+  <has_word rdf:resource="#когд"/>
+  <has_word rdf:resource="#прост"/>
+  <has_word rdf:resource="#поднима"/>
+  <has_word rdf:resource="#напряжен"/>
+  <has_word rdf:resource="#процессор"/>
+  <has_word rdf:resource="#1,375"/>
+  <has_word rdf:resource="#буст"/>
+  <has_word rdf:resource="#4.2"/>
+  <has_word rdf:resource="#систем"/>
+  <has_word rdf:resource="#температур"/>
+  <has_word rdf:resource="#выш"/>
+  <has_word rdf:resource="#Ryzen"/>
+  <has_word rdf:resource="#счита"/>
+  <has_word rdf:resource="#норм"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#напряжен">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#1,375">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#буст">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#4.2">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#норм">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_31">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#турб"/>
+  <has_word rdf:resource="#буст"/>
+  <has_word rdf:resource="#жар"/>
+  <has_word rdf:resource="#100"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#турб">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#жар">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_32">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#меньш"/>
+  <has_word rdf:resource="#цен"/>
+  <has_word rdf:resource="#акц"/>
+  <has_word rdf:resource="#можн"/>
+  <has_word rdf:resource="#куп"/>
+  <has_word rdf:resource="#ryzen"/>
+  <has_word rdf:resource="#3600"/>
+  <has_word rdf:resource="#котор"/>
+  <has_word rdf:resource="#немн"/>
+  <has_word rdf:resource="#производительн"/>
+  <has_word rdf:resource="#хот"/>
+  <has_word rdf:resource="#разниц"/>
+  <has_word rdf:resource="#межд"/>
+  <has_word rdf:resource="#совс"/>
+  <has_word rdf:resource="#небольш"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#меньш">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#акц">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#немн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#межд">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#совс">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#небольш">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_33">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#совс"/>
+  <has_word rdf:resource="#недостаток"/>
+  <has_word rdf:resource="#прост"/>
+  <has_word rdf:resource="#скачут"/>
+  <has_word rdf:resource="#частот"/>
+  <has_word rdf:resource="#напряг"/>
+  <has_word rdf:resource="#следств"/>
+  <has_word rdf:resource="#температур"/>
+  <has_word rdf:resource="#писа"/>
+  <has_word rdf:resource="#выш"/>
+  <has_word rdf:resource="#процессор"/>
+  <has_word rdf:resource="#норм"/>
+  <has_word rdf:resource="#есл"/>
+  <has_word rdf:resource="#раздража"/>
+  <has_word rdf:resource="#можн"/>
+  <has_word rdf:resource="#уменьш"/>
+  <has_word rdf:resource="#вольтаж"/>
+  <has_word rdf:resource="#прощ"/>
+  <has_word rdf:resource="#энергоснабжен"/>
+  <has_word rdf:resource="#100"/>
+  <has_word rdf:resource="#турбобуст"/>
+  <has_word rdf:resource="#стабильн"/>
+  <has_word rdf:resource="#прибав"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#скачут">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#напряг">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#следств">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#писа">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#раздража">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#уменьш">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#вольтаж">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#прощ">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#энергоснабжен">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#турбобуст">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#прибав">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_34">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#низк"/>
+  <has_word rdf:resource="#частот"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#низк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_35">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#греет"/>
+  <has_word rdf:resource="#100"/>
+  <has_word rdf:resource="#градус"/>
+  <has_word rdf:resource="#игр"/>
+  <has_word rdf:resource="#термопаст"/>
+  <has_word rdf:resource="#башн"/>
+  <has_word rdf:resource="#Aerocool"/>
+  <has_word rdf:resource="#Verkho"/>
+  <has_word rdf:resource="#Plus"/>
+  <has_word rdf:resource="#1.2"/>
+  <has_word rdf:resource="#прост"/>
+  <has_word rdf:resource="#температур"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#термопаст">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Aerocool">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Verkho">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Plus">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#1.2">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_36">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#скор"/>
+  <has_word rdf:resource="#всег"/>
+  <has_word rdf:resource="#нужн"/>
+  <has_word rdf:resource="#материнск"/>
+  <has_word rdf:resource="#плат"/>
+  <has_word rdf:resource="#минимальн"/>
+  <has_word rdf:resource="#охлажден"/>
+  <has_word rdf:resource="#зон"/>
+  <has_word rdf:resource="#питан"/>
+  <has_word rdf:resource="#процессор"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#нужн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#минимальн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#зон">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#питан">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_37">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#поставк"/>
+  <has_word rdf:resource="#...."/>
+  <has_word rdf:resource="#хот"/>
+  <has_word rdf:resource="#пластиков"/>
+  <has_word rdf:resource="#кейс"/>
+  <has_word rdf:resource="#прост"/>
+  <has_word rdf:resource="#камен"/>
+  <has_word rdf:resource="#голыш"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#кейс">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#голыш">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_38">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#стар"/>
+  <has_word rdf:resource="#архитектур"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#архитектур">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_39">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#достав"/>
+  <has_word rdf:resource="#завернут"/>
+  <has_word rdf:resource="#кусочек"/>
+  <has_word rdf:resource="#пупырчат"/>
+  <has_word rdf:resource="#пленк"/>
+  <has_word rdf:resource="#какую-т"/>
+  <has_word rdf:resource="#конфет"/>
+  <has_word rdf:resource="#покупа"/>
+  <has_word rdf:resource="#вмест"/>
+  <has_word rdf:resource="#материнск"/>
+  <has_word rdf:resource="#плат"/>
+  <has_word rdf:resource="#оперативн"/>
+  <has_word rdf:resource="#памят"/>
+  <has_word rdf:resource="#даж"/>
+  <has_word rdf:resource="#зраз"/>
+  <has_word rdf:resource="#примет"/>
+  <has_word rdf:resource="#общ"/>
+  <has_word rdf:resource="#пакете-майк"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#достав">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#какую-т">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#конфет">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#покупа">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#вмест">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#зраз">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#примет">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#общ">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#пакете-майк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_40">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#длительн"/>
+  <has_word rdf:resource="#нагрузк"/>
+  <has_word rdf:resource="#вывоз"/>
+  <has_word rdf:resource="#материнк"/>
+  <has_word rdf:resource="#Asrock"/>
+  <has_word rdf:resource="#H610"/>
+  <has_word rdf:resource="#буст"/>
+  <has_word rdf:resource="#лимит"/>
+  <has_word rdf:resource="#долг"/>
+  <has_word rdf:resource="#95ватт"/>
+  <has_word rdf:resource="#хвата"/>
+  <has_word rdf:resource="#тротл"/>
+  <has_word rdf:resource="#брал"/>
+  <has_word rdf:resource="#12100F"/>
+  <has_word rdf:resource="#план"/>
+  <has_word rdf:resource="#брат"/>
+  <has_word rdf:resource="#что-т"/>
+  <has_word rdf:resource="#мощн"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#длительн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#вывоз">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Asrock">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#H610">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#95ватт">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#хвата">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#тротл">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#12100F">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#план">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#брат">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#что-т">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#мощн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_41">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#продавец"/>
+  <has_word rdf:resource="#вынес"/>
+  <has_word rdf:resource="#вообщ"/>
+  <has_word rdf:resource="#запечата"/>
+  <has_word rdf:resource="#экземпляр"/>
+  <has_word rdf:resource="#гол"/>
+  <has_word rdf:resource="#рук"/>
+  <has_word rdf:resource="#цапа"/>
+  <has_word rdf:resource="#понима"/>
+  <has_word rdf:resource="#хот"/>
+  <has_word rdf:resource="#упакова"/>
+  <has_word rdf:resource="#что-нибуд"/>
+  <has_word rdf:resource="#ситилинк"/>
+  <has_word rdf:resource="#удивля"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#продавец">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#вынес">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#запечата">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#экземпляр">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#гол">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#цапа">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#понима">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#что-нибуд">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#удивля">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_42">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#греет"/>
+  <has_word rdf:resource="#очен"/>
+  <has_word rdf:resource="#сильн"/>
+  <has_word rdf:resource="#мен"/>
+  <has_word rdf:resource="#водян"/>
+  <has_word rdf:resource="#охлажден"/>
+  <has_word rdf:resource="#поглощен"/>
+  <has_word rdf:resource="#тепл"/>
+  <has_word rdf:resource="#350"/>
+  <has_word rdf:resource="#вт."/>
+  <has_word rdf:resource="#процессор"/>
+  <has_word rdf:resource="#101"/>
+  <has_word rdf:resource="#градус"/>
+  <has_word rdf:resource="#максимальн"/>
+  <has_word rdf:resource="#нагрузк"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#водян">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#поглощен">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#тепл">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#350">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#вт.">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#101">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#максимальн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_43">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#отсутств"/>
+  <has_word rdf:resource="#упаковк"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_44">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#горяч"/>
+  <has_word rdf:resource="#прям"/>
+  <has_word rdf:resource="#очен"/>
+  <has_word rdf:resource="#водянк"/>
+  <has_word rdf:resource="#360"/>
+  <has_word rdf:resource="#350"/>
+  <has_word rdf:resource="#тдп"/>
+  <has_word rdf:resource="#стресс"/>
+  <has_word rdf:resource="#тест"/>
+  <has_word rdf:resource="#температур"/>
+  <has_word rdf:resource="#опуска"/>
+  <has_word rdf:resource="#ниж"/>
+  <has_word rdf:resource="#100"/>
+  <has_word rdf:resource="#хот"/>
+  <has_word rdf:resource="#процессор"/>
+  <has_word rdf:resource="#253"/>
+  <has_word rdf:resource="#турб"/>
+  <has_word rdf:resource="#буст"/>
+  <has_word rdf:resource="#упаковк"/>
+  <has_word rdf:resource="#жест"/>
+  <has_word rdf:resource="#кусочк"/>
+  <has_word rdf:resource="#паралон"/>
+  <has_word rdf:resource="#леж"/>
+  <has_word rdf:resource="#дел"/>
+  <has_word rdf:resource="#замота"/>
+  <has_word rdf:resource="#резинк"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#водянк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#360">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#тдп">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#опуска">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ниж">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#253">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#жест">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#паралон">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#леж">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#дел">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#замота">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_45">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#плох"/>
+  <has_word rdf:resource="#упакова"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_46">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#хотел"/>
+  <has_word rdf:resource="#написа"/>
+  <has_word rdf:resource="#цен"/>
+  <has_word rdf:resource="#ситилинк"/>
+  <has_word rdf:resource="#сто"/>
+  <has_word rdf:resource="#6тыс"/>
+  <has_word rdf:resource="#дешевл"/>
+  <has_word rdf:resource="#днс"/>
+  <has_word rdf:resource="#39990"/>
+  <has_word rdf:resource="#упаковк"/>
+  <has_word rdf:resource="#прост"/>
+  <has_word rdf:resource="#завернут"/>
+  <has_word rdf:resource="#пупырк"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#написа">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#6тыс">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#днс">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#39990">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_47">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#достаточн"/>
+  <has_word rdf:resource="#горяч"/>
+  <has_word rdf:resource="#продукц"/>
+  <has_word rdf:resource="#intel"/>
+  <has_word rdf:resource="#пришел"/>
+  <has_word rdf:resource="#полиэтиленов"/>
+  <has_word rdf:resource="#пупырк"/>
+  <has_word rdf:resource="#котор"/>
+  <has_word rdf:resource="#защища"/>
+  <has_word rdf:resource="#статик"/>
+  <has_word rdf:resource="#вариант"/>
+  <has_word rdf:resource="#можн"/>
+  <has_word rdf:resource="#повред"/>
+  <has_word rdf:resource="#проц"/>
+  <has_word rdf:resource="#установк"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#продукц">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#intel">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#пришел">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#полиэтиленов">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#защища">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#статик">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#повред">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_48">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#горяч"/>
+  <has_word rdf:resource="#сраз"/>
+  <has_word rdf:resource="#дума"/>
+  <has_word rdf:resource="#водян"/>
+  <has_word rdf:resource="#охлажден"/>
+  <has_word rdf:resource="#систем"/>
+  <has_word rdf:resource="#420"/>
+  <has_word rdf:resource="#держ"/>
+  <has_word rdf:resource="#андервольтинг"/>
+  <has_word rdf:resource="#главн"/>
+  <has_word rdf:resource="#постав"/>
+  <has_word rdf:resource="#верн"/>
+  <has_word rdf:resource="#настройк"/>
+  <has_word rdf:resource="#помп"/>
+  <has_word rdf:resource="#теплов"/>
+  <has_word rdf:resource="#удар"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#сраз">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#420">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#держ">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#андервольтинг">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#главн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#верн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#помп">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#теплов">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#удар">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#negative_review_49">
+  <rdf:type rdf:resource="#Review"/>
+  <has_tone rdf:resource="#negative"/>
+  <has_word rdf:resource="#треб"/>
+  <has_word rdf:resource="#сво"/>
+  <has_word rdf:resource="#360мм"/>
+  <has_word rdf:resource="#больш"/>
+  <has_word rdf:resource="#желательн"/>
+  <has_word rdf:resource="#жидк"/>
+  <has_word rdf:resource="#металл"/>
+  <has_word rdf:resource="#качеств"/>
+  <has_word rdf:resource="#термопрослойк"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#треб">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#360мм">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#желательн">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#жидк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#металл">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#термопрослойк">
+  <rdf:type rdf:resource="#Word"/>
+</owl:NamedIndividual>
+
+
+</rdf:RDF>
