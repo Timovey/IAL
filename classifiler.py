@@ -7,8 +7,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
 
-targets = ['хороший', 'отличный', 'супер', 'шикарный', 'плохой', 'ужасный',  'горячий', 'занижен']
-
 # read positive
 fileObj = codecs.open( "pos.txt", "r", "utf_8_sig" )
 positive = fileObj.read()

@@ -11,11 +11,12 @@ from wordcloud import WordCloud
 
 DOC_PATTERN = r'.*\.txt'
 CAT_PATTERN = r'(\w+)/.*'
-my_stop_words = ['все', 'это', 'весь', 'игра', 'упаковка', 'всё', 'процессор', 'завестись']
 
 sentTokenizer = PunktSentenceTokenizer()
 tokenizer = RegexpTokenizer(r'\w+')
 morph = pymorphy2.MorphAnalyzer()
+
+my_stop_words = ['все', 'это', 'весь', 'игра', 'упаковка', 'всё', 'процессор', 'завестись']
 stopWordsRu = set(stopwords.words('russian'))
 stopWords = sorted(list(stopWordsRu) + my_stop_words)
 # r'.*(pos|neg)\.txt'
