@@ -1,3 +1,5 @@
+import os
+
 from nltk.corpus import stopwords
 from nltk.stem.snowball import SnowballStemmer
 from nltk.tokenize import word_tokenize
@@ -5,6 +7,7 @@ from nltk.probability import FreqDist
 from nltk.draw.dispersion import dispersion_plot
 import matplotlib.pyplot as plt
 import codecs
+from nltk.corpus.reader.plaintext import CategorizedPlaintextCorpusReader
 
 stemmer = SnowballStemmer("russian")
 
@@ -12,14 +15,25 @@ targets_words = ['хороший', 'отличный', 'супер', 'шикар
 targets_stemmer_words = [stemmer.stem(word) for word in targets_words]
 
 # read positive
-fileObj = codecs.open( "pos.txt", "r", "utf_8_sig" )
-positive = fileObj.read()
-fileObj.close()
+# fileObj = codecs.open( "pos.txt", "r", "utf_8_sig" )
+# positive = fileObj.read()
+# fileObj.close()
+#
+# # read negative
+# fileObj = codecs.open( "neg.txt", "r", "utf_8_sig" )
+# negative = fileObj.read()
+# fileObj.close()
 
-# read negative
-fileObj = codecs.open( "neg.txt", "r", "utf_8_sig" )
-negative = fileObj.read()
-fileObj.close()
+reader = CategorizedPlaintextCorpusReader('C:/Users/Timovey/Study/IAL/docs2',  r'(?!\.).*\.txt',
+    cat_pattern=os.path.join(r'(neg|pos)', '.*'))
+
+negative = ''
+for file_id in reader.fileids(categories =['neg']):
+    negative += reader.raw(fileids=file_id)
+
+positive = ''
+for file_id in reader.fileids(categories =['pos']):
+    positive += reader.raw(fileids=file_id)
 
 def get_words(text, is_stop):
     tokens = word_tokenize(text, 'russian')

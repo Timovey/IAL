@@ -1,3 +1,5 @@
+import os
+
 from nltk.corpus import stopwords
 import codecs
 from sklearn.feature_extraction.text import CountVectorizer
@@ -5,19 +7,32 @@ from sklearn.naive_bayes import MultinomialNB
 import random
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
+from nltk.corpus.reader.plaintext import CategorizedPlaintextCorpusReader
 
+# # read positive
+# fileObj = codecs.open( "pos.txt", "r", "utf_8_sig" )
+# positive = fileObj.read()
+# fileObj.close()
+# positive = [value for value in positive.split('\r\n') if value]
+#
+# # read negative
+# fileObj = codecs.open( "neg.txt", "r", "utf_8_sig" )
+# negative = fileObj.read()
+# fileObj.close()
+# negative = [value for value in negative.split('\r\n') if value]
 
-# read positive
-fileObj = codecs.open( "pos.txt", "r", "utf_8_sig" )
-positive = fileObj.read()
-fileObj.close()
-positive = [value for value in positive.split('\r\n') if value]
+reader = CategorizedPlaintextCorpusReader('C:/Users/Timovey/Study/IAL/docs2',  r'(?!\.).*\.txt',
+    cat_pattern=os.path.join(r'(neg|pos)', '.*'))
 
-# read negative
-fileObj = codecs.open( "neg.txt", "r", "utf_8_sig" )
-negative = fileObj.read()
-fileObj.close()
+negative = ''
+for file_id in reader.fileids(categories =['neg']):
+    negative += reader.raw(fileids=file_id)
 negative = [value for value in negative.split('\r\n') if value]
+
+positive = ''
+for file_id in reader.fileids(categories =['pos']):
+    positive += reader.raw(fileids=file_id)
+positive = [value for value in positive.split('\r\n') if value]
 
 stopwords_1 = list(set(stopwords.words('russian')))
 

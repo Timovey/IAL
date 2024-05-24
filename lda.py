@@ -1,3 +1,4 @@
+import os
 from gensim import models
 from nltk.tokenize.punkt import PunktSentenceTokenizer
 from nltk.tokenize import RegexpTokenizer
@@ -9,9 +10,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 
-DOC_PATTERN = r'.*\.txt'
-CAT_PATTERN = r'(\w+)/.*'
-
 sentTokenizer = PunktSentenceTokenizer()
 tokenizer = RegexpTokenizer(r'\w+')
 morph = pymorphy2.MorphAnalyzer()
@@ -19,9 +17,12 @@ morph = pymorphy2.MorphAnalyzer()
 my_stop_words = ['все', 'это', 'весь', 'игра', 'упаковка', 'всё', 'процессор', 'завестись']
 stopWordsRu = set(stopwords.words('russian'))
 stopWords = sorted(list(stopWordsRu) + my_stop_words)
-# r'.*(pos|neg)\.txt'
 
-reader = CategorizedPlaintextCorpusReader('C:/Users/Timovey/Study/IAL/docs/', DOC_PATTERN, cat_pattern=CAT_PATTERN)
+reader = CategorizedPlaintextCorpusReader('C:/Users/Timovey/Study/IAL/docs2',  r'(?!\.).*\.txt',
+    cat_pattern=os.path.join(r'(neg|pos)', '.*'))
+
+# print(reader.categories())
+# print(reader.fileids())
 
 textCollection = []
 for file_id in reader.fileids():
