@@ -74,6 +74,4 @@ with onto:
     create_review(NegativeTheme, negative)
 
 
-
-
 onto.save(file="ontology1.owl", format="rdfxml")
